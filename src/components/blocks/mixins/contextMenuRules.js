@@ -40,6 +40,16 @@ export default {
     },
 
     /**
+     * Insert - menu item status - show or hide
+     * @returns {boolean|*}
+     */
+    insertRule() {
+      return !this.multiSelect
+        && this.firstItemType === 'file'
+        && this.canView(this.selectedItems[0].extension);
+    },
+
+    /**
      * Edit - menu item status - show or hide
      * @returns {boolean|*}
      */

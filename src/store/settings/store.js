@@ -82,6 +82,10 @@ export default {
             icon: 'fas fa-play',
           },
           {
+            name: 'insert',
+            icon: 'fas fa-check',
+          },
+          {
             name: 'videoPlay',
             icon: 'fas fa-play',
           },

@@ -51,6 +51,13 @@ export default {
     },
 
     /**
+     * Select file
+     */
+    insertAction() {
+      this.$root.$emit('fm-selected-items', this.$store.getters['fm/selectedItems']);
+    },
+
+    /**
      * Edit file
      */
     editAction() {
