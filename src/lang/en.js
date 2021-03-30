@@ -44,6 +44,7 @@ const en = {
     rename: 'Rename',
     select: 'Select',
     view: 'View',
+    insert: 'Insert',
     zip: 'Zip',
     unzip: 'Unzip',
     edit: 'Edit',
