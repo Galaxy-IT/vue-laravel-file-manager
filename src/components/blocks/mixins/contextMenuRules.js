@@ -44,9 +44,7 @@ export default {
      * @returns {boolean|*}
      */
     insertRule() {
-      return !this.multiSelect
-        && this.firstItemType === 'file'
-        && this.canView(this.selectedItems[0].extension);
+      return true;
     },
 
     /**
