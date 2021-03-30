@@ -99,7 +99,7 @@ export default {
     selectItem(type, path, event) {
       // search in selected array
       const alreadySelected = this.selected[type].includes(path);
-      // if pressed Ctrl -> multi select
+      // if pressed Ctrl (cmd MocOS)-> multi select
       if (event.ctrlKey || event.metaKey) {
         if (!alreadySelected) {
           // add new selected item
