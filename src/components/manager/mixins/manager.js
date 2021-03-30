@@ -100,7 +100,8 @@ export default {
       // search in selected array
       const alreadySelected = this.selected[type].includes(path);
       // if pressed Ctrl -> multi select
-      if (event.ctrlKey || event.keyCode === 91) {
+      debugger
+      if (event.ctrlKey || event.keyCode === 91 || event.keyCode === '91') {
         if (!alreadySelected) {
           // add new selected item
           this.$store.commit(`fm/${this.manager}/setSelected`, { type, path });
