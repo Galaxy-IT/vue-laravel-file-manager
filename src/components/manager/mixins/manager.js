@@ -111,7 +111,7 @@ export default {
       }
 
       // single select
-      if (!event.ctrlKey && !alreadySelected || !event.metaKey && !alreadySelected) {
+      if (!event.ctrlKey && !alreadySelected && !event.metaKey) {
         this.$store.commit(`fm/${this.manager}/changeSelected`, { type, path });
       }
     },
