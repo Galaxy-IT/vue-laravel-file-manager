@@ -111,7 +111,9 @@ export default {
       }
 
       // single select
-      if ((!event.ctrlKey && !alreadySelected) || (!event.metaKey && !alreadySelected)) this.$store.commit(`fm/${this.manager}/changeSelected`, { type, path });
+      if (!event.ctrlKey && !alreadySelected || !event.metaKey && !alreadySelected) {
+        this.$store.commit(`fm/${this.manager}/changeSelected`, { type, path });
+      }
     },
 
     /**
