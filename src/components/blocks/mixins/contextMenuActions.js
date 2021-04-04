@@ -54,7 +54,7 @@ export default {
      * Select file
      */
     insertAction() {
-      this.$root.$emit('fm-selected-items', this.$store.getters['fm/selectedItems']);
+      this.$parent.$emit('fm-selected-items', this.$store.getters['fm/selectedItems']);
     },
 
     /**
